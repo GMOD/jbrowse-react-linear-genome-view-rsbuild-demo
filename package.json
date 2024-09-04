@@ -8,7 +8,7 @@
     "preview": "rsbuild preview",
     "predeploy": "yarn build",
     "deploy": "aws s3 sync --delete dist s3://jbrowse.org/demos/lgv-rsbuild/",
-    "postdeploy": "aws cloudfront create-invalidation --distribution-id E13LGELJOT4GQO --paths \"/demos/lgv-rsbuild/*\""
+    "postdeploy": "AWS_PAGER=\"\" aws cloudfront  create-invalidation --distribution-id E13LGELJOT4GQO --paths \"/demos/lgv-rsbuild/*\""
   },
   "dependencies": {
     "@fontsource/roboto": "^5.0.14",
