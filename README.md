@@ -1,9 +1,7 @@
-# rsbuild with @jbrowse/react-linear-genome-view
+# rsbuild with @jbrowse/react-linear-genome-view2
 
 This is a demo of using the linear genome view with rsbuild (see
 https://rsbuildjs.dev/)
-
-## Demo of `@jbrowse/react-linear-genome-view` with rsbuild
 
 See this app running at https://jbrowse.org/demos/lgv-rsbuild/.
 
