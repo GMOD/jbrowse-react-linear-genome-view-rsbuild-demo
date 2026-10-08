@@ -6,9 +6,7 @@
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
-    "predeploy": "yarn build",
-    "deploy": "aws s3 sync --delete dist s3://jbrowse.org/demos/lgv-rsbuild/",
-    "postdeploy": "AWS_PAGER=\"\" aws cloudfront  create-invalidation --distribution-id E13LGELJOT4GQO --paths \"/demos/lgv-rsbuild/*\""
+    "deploy": "pnpm build && aws s3 sync --delete dist s3://jbrowse.org/demos/lgv-rsbuild/ && AWS_PAGER=\"\" aws cloudfront create-invalidation --distribution-id E13LGELJOT4GQO --paths \"/demos/lgv-rsbuild/*\""
   },
   "dependencies": {
     "@fontsource/roboto": "^5.2.9",
@@ -24,5 +22,6 @@
     "@types/react-dom": "^19.2.3",
     "prettier": "^3.8.0",
     "typescript": "^5.5.2"
-  }
+  },
+  "packageManager": "pnpm@11.18.0"
 }
