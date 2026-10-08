@@ -1,13 +1,17 @@
 # rsbuild with @jbrowse/react-linear-genome-view2
 
-This is a demo of using the linear genome view with rsbuild (see
-https://rsbuildjs.dev/)
+`@jbrowse/react-linear-genome-view2` v5 (currently the `next` prerelease on npm) built with [rsbuild](https://rsbuild.dev/). The RPC worker is the prebuilt `esm/makeWorkerInstance`.
 
-See this app running at https://jbrowse.org/demos/lgv-rsbuild/.
+See it running at https://jbrowse.org/demos/lgv-rsbuild/.
 
 ## Usage
 
-Run `yarn` and then `yarn dev` to start a development instance
+```bash
+yarn
+yarn dev
+```
 
-Run `yarn build` which produces a `build` directory that can be deployed to a
-static web server
+`yarn build` writes a static site.
+
+More examples: https://jbrowse.org/storybook/, and the
+[embedding guide](https://jbrowse.org/jb2/docs/embedded_components/).
